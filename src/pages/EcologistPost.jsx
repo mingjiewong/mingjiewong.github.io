@@ -457,7 +457,7 @@ useEffect(() => {
               <td className="text-left p-4">
                 Transient error handling (e.g., retries on 429, 504) not yet validated.
                 <br />
-                MongoDB Flex Tier bottleneck surfaced at high concurrency.
+                MongoDB entry-level tier bottleneck surfaced at high concurrency.
                 <br />
                 <br />
               </td>
@@ -471,7 +471,7 @@ useEffect(() => {
                 &nbsp;
               </td>
               <td className="text-left p-4">
-                Serverless architecture with Hugging Face frontend, API Gateway, Lambda, and MongoDB Atlas Flex Tier (vector index).
+                Serverless architecture with Hugging Face frontend, API Gateway, Lambda, and MongoDB Atlas entry-level tier (vector index).
                 <br />
                 Embeddings are L2-normalized; results returned with similarity scores and reference images.
                 <br />
