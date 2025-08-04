@@ -98,6 +98,18 @@ useEffect(() => {
           by Ming Jie Wong · Updated: Aug 01, 2025
           <br />
         </p>
+        <blockquote className="text-strong">
+          <strong>Explore Southeast Asia's biodiversity</strong> — {" "}
+          <a 
+            href="https://huggingface.co/spaces/mjwong/ecologist" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="text-current no-underline hover:underline"
+          >
+            Upload a wildlife photo here
+          </a>{" "}
+          to see the most visually similar species from the region, matched using an AI model trained on ecological data. No sign-up needed.
+        </blockquote>
         <p>
           {ecologistPostPreview}
         </p>
@@ -252,8 +264,7 @@ useEffect(() => {
           <li><strong className="text-strong">Delivers detailed results</strong>, including the scientific and common name, five reference images for visual comparison, and a similarity score.</li>
         </ul>
         <p>
-          Hosted on <strong className="text-strong"><a href="https://huggingface.co/spaces/mjwong/ecologist" target="_blank" rel="noreferrer" className="text-current no-underline hover:underline">Hugging Face Spaces</a></strong>, 
-          Ecologist is free, requires no sign-in, and offers a transparent, scientifically grounded alternative to commercial visual search systems, making it ideal for researchers, educators, and nature enthusiasts.
+          Hosted on Hugging Face Spaces, Ecologist is free, requires no sign-in, and offers a transparent, scientifically grounded alternative to commercial visual search systems, making it ideal for researchers, educators, and nature enthusiasts.
         </p>
         <hr />
 
