@@ -381,8 +381,8 @@ useEffect(() => {
           </p>
           <p>  
             However, the MongoDB Atlas entry-level tier hit its concurrent connection limit, causing the backend 
-            to return <strong className="text-strong">~40%</strong> successful requests with <strong className="text-strong">p50/p95/p99 latencies of 0.54/1.63/5.6s</strong> with
-            the remaining requests throttled with 429 and 504 errors.
+            to return <strong className="text-strong">~40%</strong> successful requests with <strong className="text-strong">p50/p95/p99 latencies of 0.54/1.63/5.6s</strong> and
+            the remaining unsuccessful requests are throttled with 429 and 504 errors.
           </p>
           <p>
             This confirmed the compute tier's burst resilience and highlighted the need to size data tier limits in tandem, especially on cost-optimized stacks.
