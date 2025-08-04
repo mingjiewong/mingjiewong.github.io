@@ -268,7 +268,7 @@ useEffect(() => {
 
         <h2 className="text-strong">High-Level Architecture</h2>
         <p>Because this is a read-heavy, latency-sensitive retrieval system, image embedding is computed on the frontend to eliminate backend CPU/GPU bottlenecks. 
-          The backend is responsible only for performing lightweight, metadata-prefiltered vector search using MongoDB Atlas's aggregation framework.
+          The backend is responsible only for performing lightweight vector search using MongoDB Atlas's aggregation framework.
         </p>
         <pre className="mermaid flex items-center justify-center mb-8">
           {`
@@ -380,9 +380,9 @@ useEffect(() => {
             concurrency successfully scaled beyond the warm pool. 
           </p>
           <p>  
-            However, the MongoDB Atlas entry-level tier hit its concurrent connection limit, causing the backend 
-            to return <strong className="text-strong">~40%</strong> successful requests with <strong className="text-strong">p50/p95/p99 latencies of 0.54/1.63/5.6s</strong> and
-            the remaining unsuccessful requests are throttled with 429 and 504 errors.
+            However, the MongoDB Atlas entry-level tier hit its concurrent connection limit. Only <strong className="text-strong">~40%</strong> of requests succeeded, with 
+            successful responses returning in <strong className="text-strong">p50/p95/p99 latencies of 0.54/1.63/5.6s</strong>. The remaining requests failed with 429 or 504 
+            errors due to MongoDB Atlas connection throttling.
           </p>
           <p>
             This confirmed the compute tier's burst resilience and highlighted the need to size data tier limits in tandem, especially on cost-optimized stacks.
