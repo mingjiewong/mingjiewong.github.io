@@ -104,9 +104,9 @@ useEffect(() => {
             href="https://huggingface.co/spaces/mjwong/ecologist" 
             target="_blank" 
             rel="noreferrer" 
-            className="text-current no-underline hover:underline"
+            className="text-strong underline"
           >
-            Upload a wildlife photo here
+            Upload a wildlife photo here ↩
           </a>{" "}
           to see the most visually similar species from the region, matched using an AI model trained on ecological data. No sign-up needed.
         </blockquote>
@@ -127,7 +127,7 @@ useEffect(() => {
             they fall short in <strong className="text-strong">fine-grained, biodiversity-specific</strong> identification tasks where <strong className="text-strong">regional variation</strong>, <strong className="text-strong">scientific taxonomy</strong> and <strong className="text-strong">interpretability</strong> are crucial.
           </p>
           <p>
-            <strong><a href="https://huggingface.co/spaces/mjwong/ecologist" target="_blank" rel="noreferrer" className="text-current no-underline hover:underline">Ecologist</a></strong>, the 
+            <strong><a href="https://huggingface.co/spaces/mjwong/ecologist" target="_blank" rel="noreferrer" className="text-strong">Ecologist ↩</a></strong>, the 
             wildlife identifier described in this post, is designed to bridge this gap by prioritizing ecological specificity, scientific output, and region-aware relevance. Rather than competing with general image search platforms, 
             it complements them by addressing their blind spots in the biodiversity domain.
           </p>
@@ -188,7 +188,7 @@ useEffect(() => {
               <li>Accurately telling apart very similar species, such as different types of birds or butterflies.</li>
               <li>Grouping images based on important biological characteristics like petal shape or wing patterns.</li>
             </ul>
-            In contrast, BioCLIP, the model powering Ecologist, was specifically trained for biological tasks. By using millions of expert-labeled observations from sources like <strong className="text-strong"><a href="https://www.inaturalist.org/" target="_blank" rel="noreferrer" className="text-current no-underline hover:underline">iNaturalist</a></strong>, BioCLIP is uniquely able to:
+            In contrast, BioCLIP, the model powering Ecologist, was specifically trained for biological tasks. By using millions of expert-labeled observations from sources like <strong className="text-strong"><a href="https://www.inaturalist.org/" target="_blank" rel="noreferrer" className="text-current">iNaturalist ↩</a></strong>, BioCLIP is uniquely able to:
             <ul>
               <li>Make more precise taxonomic identifications.</li>
               <li>Recognize and learn from key ecological features.</li>
@@ -685,19 +685,19 @@ useEffect(() => {
         <h2 className="text-strong">References</h2>
         <ol>
           <li>
-            <a href="https://arxiv.org/abs/2311.18803" target="_blank" rel="noreferrer" className="text-current no-underline hover:underline">BioCLIP: A Vision Foundation Model for the Tree of Life</a>
+            <a href="https://arxiv.org/abs/2311.18803" target="_blank" rel="noreferrer" className="text-current">BioCLIP: A Vision Foundation Model for the Tree of Life ↩</a>
           </li>
           <li>
-            <a href="https://www.mongodb.com/docs/atlas/atlas-vector-search/tutorials/vector-search-quick-start/?tck=ai_as_web" target="_blank" rel="noreferrer" className="text-current no-underline hover:underline">MongoDB Atlas Vector Search Quick Start</a>
+            <a href="https://www.mongodb.com/docs/atlas/atlas-vector-search/tutorials/vector-search-quick-start/?tck=ai_as_web" target="_blank" rel="noreferrer" className="text-strong">MongoDB Atlas Vector Search Quick Start ↩</a>
           </li>
           <li>
-            <a href="https://www.mongodb.com/resources/basics/hierarchical-navigable-small-world" target="_blank" rel="noreferrer" className="text-current no-underline hover:underline">What is a Hierarchical Navigable Small World?</a>
+            <a href="https://www.mongodb.com/resources/basics/hierarchical-navigable-small-world" target="_blank" rel="noreferrer" className="text-strong">What is a Hierarchical Navigable Small World? ↩</a>
           </li>
           <li>
-            <a href="https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-torchserve.html" target="_blank" rel="noreferrer" className="text-current no-underline hover:underline">AWS Developer Guide for TorchServe</a>
+            <a href="https://docs.aws.amazon.com/dlami/latest/devguide/tutorial-torchserve.html" target="_blank" rel="noreferrer" className="text-strong">AWS Developer Guide for TorchServe ↩</a>
           </li>
           <li>
-            <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html" target="_blank" rel="noreferrer" className="text-current no-underline hover:underline">AWS Developer Guide for Deploying Models for Inference in SageMaker</a>
+            <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html" target="_blank" rel="noreferrer" className="text-strong">AWS Developer Guide for Deploying Models for Inference in SageMaker ↩</a>
           </li>
         </ol>
       </article>
