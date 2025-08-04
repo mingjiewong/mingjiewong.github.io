@@ -683,7 +683,7 @@ useEffect(() => {
         <h2 className="text-strong">References</h2>
         <ol>
           <li>
-            <a href="https://arxiv.org/abs/2311.18803" target="_blank" rel="noreferrer" className="text-current">BioCLIP: A Vision Foundation Model for the Tree of Life ↩</a>
+            <a href="https://arxiv.org/abs/2311.18803" target="_blank" rel="noreferrer" className="text-strong">BioCLIP: A Vision Foundation Model for the Tree of Life ↩</a>
           </li>
           <li>
             <a href="https://www.mongodb.com/docs/atlas/atlas-vector-search/tutorials/vector-search-quick-start/?tck=ai_as_web" target="_blank" rel="noreferrer" className="text-strong">MongoDB Atlas Vector Search Quick Start ↩</a>
