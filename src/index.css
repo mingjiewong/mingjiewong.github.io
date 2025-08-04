@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * =============================================================================
+ * 1. Core Design Tokens
+ * =============================================================================
+ * Defines CSS variables for the site's color palette, spacing, and transitions.
+ * These tokens are used for both light (default) and dark themes, ensuring a
+ * consistent and easily maintainable design system.
+ */
+:root {
+  --radius: 8px;
+  --transition: 200ms ease;
+
+  /* Light Theme Palette */
+  --background: #f8f9fa;
+  --foreground: #212529;
+  --foreground-muted: #343a40;
+  --border: #e9ecef;
+  --card: #ffffff;
+  --muted: #e9ecef;
+  --ring: #212529;
+  --blockquote-border: #cbd5e1; /* Light gray for blockquote border */
+}
+
+:root[data-theme="dark"] {
+  /* Dark Theme Palette */
+  --background: #121212; 
+  --foreground: #f8f9fa;
+  --foreground-muted: #aaaaaa;
+  --border: #2a2a2a;
+  --card: #181818;
+  --muted: #2a2a2a;
+  --ring: #f8f9fa;
+  --blockquote-border: #4a5568; /* Dark gray for blockquote border */
+}
+
+/*
+ * =============================================================================
+ * 2. Base Page Styles
+ * =============================================================================
+ * Sets global styles for the document, including background, text color, and
+ * font rendering for a clean and consistent look across the site.
+ */
+html {
+  /* Informs the browser of the supported color schemes for native UI elements. */
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--foreground-muted);
+  /* Improves font rendering on WebKit-based browsers (e.g., Safari). */
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+ * =============================================================================
+ * 3. Global Element Styling & Utility Classes
+ * =============================================================================
+ * Provides consistent styling for common interactive elements and reusable
+ * utility classes like `.card`.
+ */
+:where(button, a, input, textarea) {
+  border-radius: var(--radius);
+  /* Applies smooth transitions to interactive elements. */
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+/*
+ * =============================================================================
+ * 4. Accessibility Enhancements
+ * =============================================================================
+ * Ensures a clear and visible focus state for all interactive elements,
+ * improving keyboard navigation and accessibility.
+ */
+:where(button, a, input, textarea):focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/*
+ * =============================================================================
+ * 5. Typography Utilities
+ * =============================================================================
+ * Custom typography classes for specific styling needs.
+ */
+.text-strong {
+  /* Applies the primary foreground color for emphasis. */
+  color: var(--foreground); 
+}
+
+/*
+ * =============================================================================
+ * 6. Prose (Article Content) Overrides
+ * =============================================================================
+ * Custom styles for elements within the `.prose` class from Tailwind's
+ * typography plugin, ensuring they match the site's theme.
+ */
+.prose blockquote {
+  margin-left: 0;  
+  margin-right: 0;
+  padding-left: 1rem;
+  /* Uses a theme-aware variable for the border color. */
+  border-left: 4px solid var(--blockquote-border);
+  font-style: italic;
+}
+.prose blockquote p {
+  /* Resets paragraph margin inside a blockquote for cleaner alignment. */
+  margin: 0;
+}

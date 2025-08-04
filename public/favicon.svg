@@ -1,0 +1,13 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- rounded square background -->
+  <rect width="64" height="64" rx="12" fill="#111"></rect>
+
+  <!-- “M” letter -->
+  <text x="50%" y="46%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, ui-sans-serif" font-size="38" font-weight="700" fill="#FFF">
+    M
+  </text>
+
+  <!-- underline (thin, centered) -->
+  <line x1="20" x2="44" y1="46" y2="46" stroke="#FFF" stroke-width="3" stroke-linecap="round"></line>
+</svg>
