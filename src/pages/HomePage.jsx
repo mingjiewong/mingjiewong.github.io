@@ -37,10 +37,10 @@ export default function HomePage({ greeting, newestPosts, latestExperience }) {
       {/* ABOUT, EXPERIENCE, POSTS SECTIONS */}
       <section className="space-y-12 py-12">
         {/* About Section */}
-        <div className="grid md:grid-cols-[auto,1fr] items-start">
+        <div className="grid md:grid-cols-[auto,1fr] items-start gap-4">
           <h2 className="text-lg text-strong">About</h2>
-          <div className="flex items-start">
-            <div className="flex items-center">
+          <div className="flex gap-6">
+            <div className="self-center">
               <img
                 src={`${base}profile.jpg`}
                 alt="Ming Jie Wong"
@@ -49,7 +49,7 @@ export default function HomePage({ greeting, newestPosts, latestExperience }) {
                 className="w-24 h-24 object-contain"
               />
             </div>
-            <p className="text-[17px] opacity-90">
+            <p className="text-[17px] opacity-90 leading-relaxed">
               🇸🇬 Software engineer building robust, scalable infrastructure for deploying Large Language
               Models (LLMs) in enterprise environments. My recent work spans NLP applications, MLOps, LLM
               orchestration, and data pipeline automation. Off hours, I contribute to open-source projects,
