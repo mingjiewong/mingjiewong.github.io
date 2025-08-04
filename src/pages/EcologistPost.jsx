@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import mermaid from "mermaid";
+import PageLayout from "../components/PageLayout";
 
 const codePy = `from open_clip import create_model_and_transforms
 import torch
@@ -88,10 +89,7 @@ useEffect(() => {
 }, []);
 
   return (
-    <div className="w-full max-w-[768px] px-6 py-12 text-[20px] mx-auto">
-      <Link to={base} className="inline-flex items-center gap-2 text-[var(--foreground-muted)] no-underline opacity-60 mb-8 font-bold hover:opacity-100 hover:underline">
-        <strong>Back to Home</strong>
-      </Link>
+    <PageLayout showBackLink={true} className="text-[20px]">
       <article className="prose dark:prose-invert max-w-none">
         <h1 className="text-strong">Building an AI-Powered Wildlife Identifier for Southeast Asia Using BioCLIP, MongoDB Atlas, and Serverless Infrastructure</h1>
         <p className="text-base text-[18px]">
@@ -701,6 +699,6 @@ useEffect(() => {
           </li>
         </ol>
       </article>
-    </div>
+    </PageLayout>
   );
 }

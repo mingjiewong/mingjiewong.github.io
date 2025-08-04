@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineCalendar } from "react-icons/ai";
+import PageLayout from "../components/PageLayout";
 
 /**
  * Renders the home page content, including hero, about, experience, and posts sections.
@@ -15,7 +16,7 @@ export default function HomePage({ greeting, newestPosts, latestExperience }) {
   const [hoveredIdx, setHoveredIdx] = useState(null);
 
   return (
-    <>
+    <PageLayout className="px-8 md:px-6">
       {/* HERO */}
       <section className="pt-12 pb-6 text-center space-y-5">
         <h1 className="text-4xl md:text-5xl text-strong leading-tight">
@@ -111,6 +112,6 @@ export default function HomePage({ greeting, newestPosts, latestExperience }) {
           </div>
         </div>
       </section>
-    </>
+    </PageLayout>
   );
 }
