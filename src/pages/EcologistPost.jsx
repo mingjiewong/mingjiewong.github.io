@@ -403,7 +403,6 @@ useEffect(() => {
               <td className="text-left p-4"><strong className="text-strong">Latency</strong></td>
               <td className="text-left p-4">
                 Keep end-to-end latency below user tolerance thresholds; avoid API Gateway timeouts (504).
-                &nbsp;
               </td>
               <td className="text-left p-4">
                 Empirically observed p50 = ~15s, p95 = ~30s, with occasional manual refresh beyond 30s. 
@@ -420,7 +419,6 @@ useEffect(() => {
               <td className="text-left p-4"><strong className="text-strong">Burst Load</strong></td>
               <td className="text-left p-4">
                 	Absorb moderate spikes (e.g. 100-200 RPS) without cold starts or degraded responsiveness.
-                &nbsp;
               </td>
               <td className="text-left p-4">
                 A small provisioned concurrency pool on AWS Lambda is configured to avoid cold starts with overflow handled by on-demand scaling.
@@ -435,8 +433,6 @@ useEffect(() => {
               <td className="text-left p-4"><strong className="text-strong">Data Scope</strong></td>
               <td className="text-left p-4">
                 	Restrict retrieval to ecologically relevant regions (Singapore, Malaysia, Thailand, Indonesia).
-                <br />
-                &nbsp;
               </td>
               <td className="text-left p-4">
                 Vector search is country-filtered using metadata.
@@ -451,8 +447,6 @@ useEffect(() => {
               <td className="text-left p-4"><strong className="text-strong">Error Handling</strong></td>
               <td className="text-left p-4">
                 Minimize failure rates and recover gracefully under stress (DB throttling, API limits).
-                <br />
-                &nbsp;
               </td>
               <td className="text-left p-4">
                 Transient error handling (e.g., retries on 429, 504) not yet validated.
@@ -467,8 +461,6 @@ useEffect(() => {
               <td className="text-left p-4"><strong className="text-strong">Cost & Ops</strong></td>
               <td className="text-left p-4">
                 Prioritize low-cost, low-maintenance deployment with transparent explainability for end users.
-                <br />
-                &nbsp;
               </td>
               <td className="text-left p-4">
                 Serverless architecture with Hugging Face frontend, API Gateway, Lambda, and MongoDB Atlas entry-level tier (vector index).
