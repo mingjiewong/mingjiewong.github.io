@@ -395,7 +395,7 @@ useEffect(() => {
             <tr>
               <th className="text-left p-3 text-base font-semibold border-b-2 border-slate-400 dark:border-slate-600"><strong className="text-strong">Metric</strong></th>
               <th className="text-left p-3 text-base font-semibold border-b-2 border-slate-400 dark:border-slate-600"><strong className="text-strong">Design Rationale</strong></th>
-              <th className="text-left p-3 text-base font-semibold border-b-2 border-slate-400 dark:border-slate-600"><strong className="text-strong">Current Implementation</strong></th>
+              <th className="text-left p-3 text-base font-semibold border-b-2 border-slate-400 dark:border-slate-600"><strong className="text-strong">Current State</strong></th>
             </tr>
           </thead>
           <tbody className="align-top text-[17px] leading-7 tracking-[0.005em]">
@@ -435,7 +435,7 @@ useEffect(() => {
                 	Restrict retrieval to ecologically relevant regions (Singapore, Malaysia, Thailand, Indonesia).
               </td>
               <td className="text-left p-4">
-                Vector search is country-filtered using metadata.
+                Vector search is scoped to a country-specific collection, eliminating the need for metadata-based filtering.
                 <br />
                 Uses research-grade iNaturalist entries only.
                 <br />
