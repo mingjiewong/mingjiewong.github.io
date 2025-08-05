@@ -140,9 +140,9 @@ useEffect(() => {
             <strong>Example:</strong>
             <p>An image of a Singaporean wild boar (left) could be incorrectly matched with a Eurasian boar from North America (right), demonstrating how general-purpose models may overlook crucial geographic context.</p>
             <div className="flex gap-4 my-4">
-              <img src={`${base}boar_sg.jpg`} alt="Wild Boar in Singapore" className="w-1/2 rounded-lg shadow-md" />
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-              <img src={`${base}boar_us.jpg`} alt="Eurasian Boar" className="w-1/2 rounded-lg shadow-md" />
+              <img src={`${base}boar_sg.jpg`} alt="Wild Boar in Singapore" className="flex-1 max-w-[calc(50%-0.5rem)] rounded-lg shadow-md" />
+              <p>&nbsp;&nbsp;</p>
+              <img src={`${base}boar_us.jpg`} alt="Eurasian Boar" className="flex-1 max-w-[calc(50%-0.5rem)] rounded-lg shadow-md" />
             </div>
           </div>
           <p className="text-center italic text-[15px] mt-2">
