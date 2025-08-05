@@ -400,7 +400,7 @@ useEffect(() => {
           </thead>
           <tbody className="align-top text-[17px] leading-7 tracking-[0.005em]">
             <tr>
-              <td className="text-left p-4"><strong className="text-strong">Latency&nbsp;&nbsp;</strong></td>
+              <td className="text-left p-4"><strong className="text-strong">Latency</strong></td>
               <td className="text-left p-4">
                 Keep end-to-end latency below user tolerance thresholds; avoid API Gateway timeouts (504).
                 &nbsp;
@@ -417,7 +417,7 @@ useEffect(() => {
             </tr>
 
             <tr>
-              <td className="text-left p-4"><strong className="text-strong">Burst Load&nbsp;&nbsp;</strong></td>
+              <td className="text-left p-4"><strong className="text-strong">Burst Load</strong></td>
               <td className="text-left p-4">
                 	Absorb moderate spikes (e.g. 100-200 RPS) without cold starts or degraded responsiveness.
                 &nbsp;
@@ -432,7 +432,7 @@ useEffect(() => {
             </tr>
 
             <tr>
-              <td className="text-left p-4"><strong className="text-strong">Data Scope&nbsp;&nbsp;</strong></td>
+              <td className="text-left p-4"><strong className="text-strong">Data Scope</strong></td>
               <td className="text-left p-4">
                 	Restrict retrieval to ecologically relevant regions (Singapore, Malaysia, Thailand, Indonesia).
                 <br />
@@ -448,7 +448,7 @@ useEffect(() => {
             </tr>
 
             <tr>
-              <td className="text-left p-4"><strong className="text-strong">Error Handling&nbsp;&nbsp;</strong></td>
+              <td className="text-left p-4"><strong className="text-strong">Error Handling</strong></td>
               <td className="text-left p-4">
                 Minimize failure rates and recover gracefully under stress (DB throttling, API limits).
                 <br />
@@ -464,7 +464,7 @@ useEffect(() => {
             </tr>
 
             <tr>
-              <td className="text-left p-4"><strong className="text-strong">Cost & Ops&nbsp;&nbsp;</strong></td>
+              <td className="text-left p-4"><strong className="text-strong">Cost & Ops</strong></td>
               <td className="text-left p-4">
                 Prioritize low-cost, low-maintenance deployment with transparent explainability for end users.
                 <br />
@@ -480,7 +480,7 @@ useEffect(() => {
             </tr>
 
             <tr>
-              <td className="text-left p-4"><strong className="text-strong">Reproducibility&nbsp;&nbsp;</strong></td>
+              <td className="text-left p-4"><strong className="text-strong">Reproducibility</strong></td>
               <td className="text-left p-4">
                 Ensure deployment is infra-as-code and behaviorally stable.
               </td>
