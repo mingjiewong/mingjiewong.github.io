@@ -59,6 +59,8 @@ export default function HomePage({ greeting, newestPosts, latestExperience }) {
           </div>
         </div>
 
+        <hr className="my-8 border-[var(--border)]" />
+
         {/* Experience Section */}
         <div className="grid md:grid-cols-[auto,1fr] items-start">
           <h2 className="text-lg text-strong">Latest Experience</h2>
@@ -75,6 +77,8 @@ export default function HomePage({ greeting, newestPosts, latestExperience }) {
             ))}
           </div>
         </div>
+
+        <hr className="my-8 border-[var(--border)]" />
 
         {/* Newest Posts */}
         <div className="grid md:grid-cols-[auto,1fr] items-start">
