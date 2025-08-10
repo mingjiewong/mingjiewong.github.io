@@ -119,3 +119,32 @@ body {
   /* Resets paragraph margin inside a blockquote for cleaner alignment. */
   margin: 0;
 }
+
+/*
+ * =============================================================================
+ * 7. Animated underline utility
+ * =============================================================================
+ * Creates a left-to-right underline that matches the text color (currentColor),
+ * supports multi-line text via box-decoration-break, and animates on group hover.
+ * Usage: wrap the title in <span class="underline-animate">…</span> inside a parent with class "group".
+ */
+.underline-animate {
+  /* Draw a 1D line using the current text color as a background layer */
+  background-image: linear-gradient(currentColor, currentColor);
+  /* Place the line at the bottom of the text box, starting on the left */
+  background-position: 0 100%;
+  /* Start with 0% width so it can animate to full width; height = underline thickness */
+  background-size: 0% 2px;
+  /* Prevent the line from tiling */
+  background-repeat: no-repeat;
+  /* Animate the width expansion on hover */
+  transition: background-size 300ms ease;
+  /* Ensure the underline renders under each wrapped line (multi-line support) */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* On parent hover (.group), expand the underline to the full text width */
+.group:hover .underline-animate {
+  background-size: 100% 2px;
+}

@@ -102,13 +102,23 @@ export default function HomePage({ greeting, newestPosts, latestExperience }) {
                 "
               >
                 <div className="flex justify-between items-center">
-                  <div className="space-y-2">
+                  <div>
                     <div className="flex items-center text-[14px] mb-1 opacity-80 group-hover:opacity-100">
                       <AiOutlineCalendar size={20}/>
                       <span>&nbsp;{post.date}</span>
                     </div>
-                    <h3 className="text-lg leading-tight transition-all duration-200 ease-out opacity-80 group-hover:opacity-100 group-hover:underline">{post.title}</h3>
-                    <p className="text-[15px] leading-relaxed transition-opacity duration-200 ease-out opacity-80 group-hover:opacity-100">{post.desc}</p>
+                    <h3
+                      className="
+                        relative block
+                        text-lg leading-tight
+                        opacity-80 transition-opacity duration-200 ease-out
+                        group-hover:opacity-100
+                        mb-1
+                      "
+                    >
+                      <span className="underline-animate">{post.title}</span>
+                    </h3>
+                    <p className="mt-1 text-[15px] leading-relaxed transition-opacity duration-200 ease-out opacity-80 group-hover:opacity-100">{post.desc}</p>
                   </div>
                 </div>
               </Link>
