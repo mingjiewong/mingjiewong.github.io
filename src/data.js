@@ -57,7 +57,7 @@ export const newestPosts = [
 export const latestExperience = [
   {
     role: "Machine Learning Engineer",
-    company: "Synthesis (Business Consulting and Services)",
+    company: "Synthesis (Business Consulting and Services • Singapore, SG)",
     period: "2025 - Present",
     desc: "Focused on designing and building end-to-end ML systems for orchestrating internal and external data models and products.",
   },
