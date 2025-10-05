@@ -56,9 +56,15 @@ export const newestPosts = [
  */
 export const latestExperience = [
   {
+    role: "Machine Learning Engineer",
+    company: "Synthesis (Singapore)",
+    period: "2025 - Present",
+    desc: "Focused on designing and building end-to-end ML systems for orchestrating internal and external data models and products.",
+  },
+  {
     role: "Data Scientist",
     company: "Volvo Cars Tech Hub Singapore",
-    period: "2025 - Present",
+    period: "2025 - 2025",
     desc: "Focused on deploying self-hosted LLMs and building MLOps infrastructure for orchestrating internal AI workflows and data pipelines.",
   },
   {
